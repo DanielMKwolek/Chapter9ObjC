@@ -40,22 +40,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqh-Kl-Npw">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mCm-ku-kPI" firstAttribute="centerX" secondItem="ryM-Jd-N40" secondAttribute="centerX" id="1OW-75-doX"/>
-                            <constraint firstItem="rOn-9h-zsh" firstAttribute="top" secondItem="mCm-ku-kPI" secondAttribute="bottom" constant="56" id="2Rx-fI-Mlc"/>
-                            <constraint firstItem="rOn-9h-zsh" firstAttribute="centerX" secondItem="ryM-Jd-N40" secondAttribute="centerX" id="7CG-30-Zhd"/>
+                            <constraint firstItem="rOn-9h-zsh" firstAttribute="top" secondItem="mCm-ku-kPI" secondAttribute="bottom" constant="40" id="2Rx-fI-Mlc"/>
+                            <constraint firstItem="qqh-Kl-Npw" firstAttribute="top" secondItem="ryM-Jd-N40" secondAttribute="top" id="8fn-d7-NgF"/>
+                            <constraint firstItem="ciS-eb-r99" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9xt-7V-vsC"/>
                             <constraint firstItem="ryM-Jd-N40" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="53" id="Dn1-Ut-4Wv"/>
                             <constraint firstItem="ryM-Jd-N40" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W5h-CX-05b"/>
-                            <constraint firstItem="ciS-eb-r99" firstAttribute="top" secondItem="ryM-Jd-N40" secondAttribute="bottom" constant="92" id="Zve-mt-iDc"/>
-                            <constraint firstItem="mCm-ku-kPI" firstAttribute="top" secondItem="ciS-eb-r99" secondAttribute="bottom" constant="153" id="sRK-eC-cAj"/>
-                            <constraint firstItem="ciS-eb-r99" firstAttribute="centerX" secondItem="ryM-Jd-N40" secondAttribute="centerX" id="uVv-CX-Wy8"/>
+                            <constraint firstItem="ciS-eb-r99" firstAttribute="top" secondItem="ryM-Jd-N40" secondAttribute="bottom" constant="30" id="Zve-mt-iDc"/>
+                            <constraint firstItem="rOn-9h-zsh" firstAttribute="centerX" secondItem="ciS-eb-r99" secondAttribute="centerX" id="fez-E3-HSp"/>
+                            <constraint firstItem="qqh-Kl-Npw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="igw-LW-8Vi"/>
+                            <constraint firstItem="mCm-ku-kPI" firstAttribute="top" secondItem="ciS-eb-r99" secondAttribute="bottom" constant="50" id="sRK-eC-cAj"/>
+                            <constraint firstItem="mCm-ku-kPI" firstAttribute="centerX" secondItem="ciS-eb-r99" secondAttribute="centerX" id="weo-r5-Rhy"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="answerLabel" destination="mCm-ku-kPI" id="rJ4-2u-9Al"/>
-                        <outlet property="questionLabel" destination="ryM-Jd-N40" id="q13-fX-43b"/>
+                        <outlet property="answerLabel" destination="mCm-ku-kPI" id="HLf-Xq-4jf"/>
+                        <outlet property="currentQuestionLabel" destination="ryM-Jd-N40" id="omv-ss-D32"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="W5h-CX-05b" id="XwK-jL-hCB"/>
+                        <outlet property="nextQuestionLabel" destination="qqh-Kl-Npw" id="4fO-Yr-Lag"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="igw-LW-8Vi" id="fbP-nm-HvY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
